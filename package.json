@@ -1,6 +1,6 @@
 {
   "name": "express-mongoose-oauth2",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Express4 / Mongoose application middleware to provide full oauth2 functionality",
   "main": "index.js",
   "scripts": {
