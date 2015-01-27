@@ -3,7 +3,7 @@
 var open = require('open');
 var Mocha = require('mocha');
 
-var ppds_auth = require('./');
+var auth = require('./');
 var authConfig = require('./test/auth');
 
 var app = require('./test/app')();
@@ -37,7 +37,7 @@ var processTest = function (req, res, next) {
 module.exports = function() {
 
 	// add auth routing
-	ppds_auth(app,'mongodb://@localhost:27017/ppds_auth_test', authConfig);
+ auth(app,'mongodb://@localhost:27017/ppds_auth_test', authConfig);
 
 	// set up error handling page
 	app.get('/testing/error', function (req, res) {
