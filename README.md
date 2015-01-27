@@ -37,7 +37,39 @@ Application ID / Secret  - from all desired providers (see below for more inform
     require('express4-mongoose-oauth2')(expressinstance, dbConnectionString, config);  
     ```
       
-    >expressinstance -  is your instance "app" ie:  var app = express();
+    >expressinstance -  is your instance "app" ie:  var app = express();  
     >dbConnectionString - is the targeted mongo db you want to use ie:'mongodb://@localhost:2701
-    7/nfl_test'.  
+    7/nfl_test'.    
     >config - provider configured completed in step 1.  
+    
+ 
+4.  Add success and error callbacks
+    
+    Implement express route handling for all success and error callbacks specific in the configuration file completed in step 1.
+    
+5.  Add client-side login links
+    
+    Add links that correspond to the specified "loginURL" from the configuration file completed in step 1.  
+
+    ```
+    // example
+    <a href="/connect/google">google</a>
+    ```
+    
+    
+
+    
+## Integration Tests
+
+This project does contain integration tests but extra configuration is required.  Phantomjs is used to perform the full oauth2 login process, with mocha tests running when the success callback is invoked for each provider login.  To perform these tests follow the steps below.  
+    
+1.  Add configuration to /test/auth found [here](./test/auth.js)
+2.  For each desired provider you must supply login creditials to the corresponding phantom-[provider].spec.js found [here] (./test/phantom/)  
+3.  Make sure your local mongodb is running.
+4.  Run gulp tests
+
+    ```
+    $ gulp test
+    ```
+
+
