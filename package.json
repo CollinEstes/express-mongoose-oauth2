@@ -6,6 +6,10 @@
   "scripts": {
     "test": "gulp test"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CollinEstes/express-mongoose-oauth2.git"
+  },
   "author": "Collin Estes",
   "license": "ISC",
   "dependencies": {
