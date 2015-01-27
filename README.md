@@ -11,9 +11,9 @@ Github
 Coinbase  
 
 ###Requirements:  
-####Mongodb - This module utlizes mongoose to save Users into supplied Mongo DB.  
-####Express Application - This module requires an express instance to add these API calls too. 
-####Application ID / Secret  - from all desired providers (see below for more information).  
+Mongodb - This module utlizes mongoose to save Users into supplied Mongo DB.  
+Express Application - This module requires an express instance to add these API calls too. 
+Application ID / Secret  - from all desired providers (see below for more information).  
 
 
 
