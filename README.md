@@ -2,6 +2,7 @@ express-mongoose-oauth2
 =========
 
 Express4 / Mongoose middleware that adds full oauth2 authentication routing and handling.
+(still in progress...)
 
 ###Current Providers Available:
 Google  
