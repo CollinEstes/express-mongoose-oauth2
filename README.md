@@ -27,7 +27,7 @@ Application ID / Secret  - from all desired providers (see below for more inform
 2.  Install express4-mongoose-oauth2
 
     ```
-    $ npm install https://github.com/CollinEstes/express-mongoose-oauth2.git  
+    npm install git+ssh://git@github.com:CollinEstes/express-mongoose-oauth2.git --save 
     ```
     
     
